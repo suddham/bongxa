@@ -4,9 +4,22 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script>
+import Vue from 'vue';
+import VueCompositionAPI from '@vue/composition-api';
+import useVuelidate from '@vuelidate/core';
+
+Vue.use(VueCompositionAPI);
+
+export default {
+  setup() {
+    return { v$: useVuelidate() };
+  },
+};
+</script>
 
 <style>
 #app {
