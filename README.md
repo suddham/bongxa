@@ -1,5 +1,5 @@
 # bongxa
-
+A form wizard learning app on Vue
 ## Project setup
 ```
 yarn install
