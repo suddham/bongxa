@@ -1,5 +1,11 @@
 <template>
   <div>
+    <!-- Actions  -->
+    <div>
+      <button class="btn btn-primary">&#9754; Back</button>
+      <button class="btn btn-primary">Next &#9755;</button>
+    </div>
+
     <!-- Progress Bar -->
     <div class="progress-bar">
       <div :style="`width: ${progress}%;`"></div>
@@ -7,13 +13,6 @@
 
     <!-- Forms  -->
     <FormBongPlans v-if="currentStepNumber === 1" />
-
-    <!-- Actions  -->
-    <button>&#9754; Back</button>
-
-    <p>
-      <button>Next &#9755;</button>
-    </p>
 
     <pre><code>{{form}}</code></pre>
   </div>

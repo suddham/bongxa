@@ -33,11 +33,12 @@
   </div>
 </template>
 <script>
+import useVuelidate from '@vuelidate/core';
 import { required } from '@vuelidate/validators';
 
 export default {
-  mounted() {
-    console.log(this.v$);
+  setup() {
+    return { v$: useVuelidate() };
   },
   data() {
     return {

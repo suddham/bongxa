@@ -8,17 +8,7 @@
   </div>
 </template>
 <script>
-import Vue from 'vue';
-import VueCompositionAPI from '@vue/composition-api';
-import useVuelidate from '@vuelidate/core';
-
-Vue.use(VueCompositionAPI);
-
-export default {
-  setup() {
-    return { v$: useVuelidate() };
-  },
-};
+export default {};
 </script>
 
 <style>
