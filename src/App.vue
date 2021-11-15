@@ -1,10 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="antialiased">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view />
+    <div class="max-w-screen-2xl mx-auto">
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
@@ -17,7 +19,6 @@ export default {};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
@@ -26,7 +27,7 @@ export default {};
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  /* color: #2c3e50; */
 }
 
 #nav a.router-link-exact-active {
